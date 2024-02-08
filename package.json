@@ -1,0 +1,11 @@
+{
+  "name": "backend-signup-form",
+  "version": "1.0.0",
+  "description": "backend for signup form using mongoDB",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "abhishek rawat",
+  "license": "ISC"
+}
