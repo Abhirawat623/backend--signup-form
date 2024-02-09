@@ -1,8 +1,8 @@
 const express = require('express');
 
-const signUpHandle = require("../backend/controllers/signUpcontroller");
+const signUpHandle = require("../controllers/signUpcontroller");
 
-const logInHandle = require("../backend/controllers/logInController");
+const logInHandle = require("../controllers/logInController");
 
 const signUpRouter= express.Router();
 const logInRouter = express.Router();
