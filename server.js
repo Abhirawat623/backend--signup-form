@@ -3,6 +3,9 @@ const express =require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const connectDB = require('./config/dbconfig');
+//auth routers
+const {signUpRouter,logInRouter} = require("./routes/auth.router");
+
 //dotenv
 dotenv.config()
 //mongoose connection
@@ -19,6 +22,9 @@ const PORT =3000;
 app.get("/",(req,res)=>{
 res.send("hello ji")
 });
+//auth routes
+app.use("/api/auth",signUpRouter);
+app.use("/api/auth",logInRouter);
 
 // app.listen(PORT,()=>{
 //     console.log("hello users")
